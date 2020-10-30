@@ -1,0 +1,48 @@
+.email__container {
+  background: url("https://i.ibb.co/Nxm51hJ/bg.png");
+  width: 1500px;
+  height: 500px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 164px;
+}
+.caption {
+  width: 305px;
+  height: 29px;
+  color: $bleck;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 27px;
+  margin-top: 145px;
+  margin-bottom: 34px;
+}
+.email__subtitle {
+  width: 550px;
+  height: 43px;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 27px;
+  margin-bottom: 31px;
+}
+.email__imput {
+  width: 570px;
+  height: 55px;
+  border: 1px solid $bleck;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+  opacity: 0.5;
+  margin-right: 30px;
+}
+.email__button {
+  width: 200px;
+  height: 55px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background: $green;
+  color: $white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 27px;
+}
