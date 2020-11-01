@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./services/src/index.html --open",
+    "dev": "parcel ./contact/src/index.html --open",
     "start": "npm run dev",
-    "build": "parcel build ./services/src/index.html --no-minify --experimental-scope-hoisting --public-url ./"
+    "build": "parcel build ./contact/src/index.html --no-minify --experimental-scope-hoisting --public-url ./"
   },
   "keywords": [],
   "author": "",
