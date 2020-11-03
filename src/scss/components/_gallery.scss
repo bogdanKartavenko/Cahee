@@ -1,0 +1,72 @@
+.gallery {
+  background: $yellow;
+  padding-top: 120px;
+  height: 1536px;
+
+  &__container {
+    width: 577px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__list {
+    margin-top: 55px;
+  }
+  &__block-image,
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+  &__image,
+  &__img,
+  &__logo {
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  &__button {
+    background: $blue;
+    margin: 50px auto 0 auto;
+  }
+}
+
+.email {
+  background: url("https://i.ibb.co/Nxm51hJ/bg.png");
+  height: 500px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding-left: 164px;
+  &__caption {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 27px;
+    margin-top: 145px;
+  margin-bottom: 34px;
+  }
+  &__subtitle {
+    width: 550px;
+  height: 43px;
+    margin-bottom: 31px;
+  }
+  &__container {
+    display: flex;
+  }
+  &__imput {
+  width: 570px;
+  height: 55px;
+  border: 1px solid $black;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 27px;
+  opacity: 0.5;
+  margin-right: 30px;
+  }
+  &__button {
+    background-color: $green;
+  }
+}
