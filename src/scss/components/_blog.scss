@@ -1,0 +1,60 @@
+.blog {
+  background: $violet;
+  height: 864px;
+  text-align: center;
+  color: $white;
+  &__title {
+    padding-top: 120px;
+  }
+  &__subtitle {
+    width: 600px;
+    height: 66px;
+    margin: 0 auto 0 auto;
+  }
+  &__pic {
+    margin: 50px auto 0 auto;
+    display: flex;
+    width: 1150px;
+    height: 310px;
+  }
+  &__pic--icon {
+    background: $blue url(https://i.ibb.co/df5b1kf/img-2.png);
+    width: 370px;
+    height: 310px;
+    margin-right: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  &__button {
+    background: $red;
+    margin: 50px auto 120px auto;
+  }
+}
+.list__data {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    background: rgba(12, 11, 11, 0.5);
+    opacity: 0.5;
+    margin: 30px 0 69px 30px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+  }
+  
+  .list__text {
+    font-size: 20px;
+    font-weight: 700;
+    color: $white;
+    line-height: 25px;
+    width: 370px;
+height: 151px;
+text-align: justify;
+padding: 50px 50px 23px 20px;
+  }
+  .list__text--activity {
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 15px;
+    }
+  

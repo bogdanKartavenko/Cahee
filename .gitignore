@@ -1,2 +1,4 @@
+.cahce
+dist
 node_modules
-.cache
+build

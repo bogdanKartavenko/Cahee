@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+font-family: Raleway, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a, button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: inline-flex;
+  text-decoration: none;
+}
+

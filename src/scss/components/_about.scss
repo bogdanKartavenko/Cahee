@@ -1,0 +1,18 @@
+.about {
+    background-color: $light_blue;
+    min-height: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    &__container {
+        padding: 94px;
+    }
+     &__title, &__subtitle {
+        color: $white;
+        width: 499px;
+        margin-top: 10px;
+    }
+    
+}

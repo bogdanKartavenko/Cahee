@@ -1,0 +1,88 @@
+.contact {
+  background: url("https://i.ibb.co/0MFCLRf/img-1.png");
+  width: 100%;
+  height: 866px;
+  display: block;
+  &__title {
+    margin: 0 auto 0 auto;
+    padding-top: 101px;
+    width: 337px;
+    height: 65px;
+  }
+
+&__subtitle {
+    margin: 68px auto 66px auto;
+    width: 350px;
+height: 41px;
+}
+
+  &__aside {
+      width: 500px;
+      height: 445px;
+    &--small {
+      display: block;
+      width: 500px;
+      height: 50px;
+      border: 0;
+      background-color: $light_blue;
+      opacity: 0.5;
+      margin-bottom: 15px;
+    }
+    &--big {
+      display: block;
+      width: 500px;
+      height: 250px;
+      border: 0;
+      background-color: $light_blue;
+      opacity: 0.5;
+    }
+    &--big:active {
+      background: $light_blue;
+      opacity: 1;
+      border-left: 5px $darken_blue;
+    }
+  }
+  
+
+  &__data {
+    width: 317px;
+    height: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: start;
+    &--big {
+      font-weight: 600;
+    }
+    &--small {
+      font-weight: 300;
+    }
+  }
+
+  &__futer {
+    height: 90px;
+    background: $black;
+    color: $gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 120px;
+    &--cahee {
+      font-family: Pacifico;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 25px;
+    }
+    &--red {
+      color: $red;
+      font-weight: 600;
+    }
+  }
+}
+
+.contact__container {
+    margin: 0 auto 0 auto;
+    width: 990x;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+}
