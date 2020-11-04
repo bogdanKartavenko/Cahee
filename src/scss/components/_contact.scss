@@ -10,16 +10,16 @@
     height: 65px;
   }
 
-&__subtitle {
+  &__subtitle {
     margin: 68px auto 66px auto;
     width: 350px;
-height: 41px;
-text-align: center;
-}
+    height: 41px;
+    text-align: center;
+  }
 
   &__aside {
-      width: 500px;
-      height: 445px;
+    width: 500px;
+    height: 445px;
     &--small {
       display: block;
       width: 500px;
@@ -51,7 +51,6 @@ text-align: center;
       }
     }
   }
-  
 
   &__data {
     width: 317px;
@@ -90,11 +89,13 @@ text-align: center;
 }
 
 .contact__container {
-    margin: 0 auto 0 auto;
-    width: 990x;
-    height: 450px;
-    display: flex;
-    justify-content: space-around;
+  margin: 0 auto 0 auto;
+  width: 990x;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
 }
 
-::-webkit-input-placeholder {color:$white;}
+::-webkit-input-placeholder {
+  color: $white;
+}
