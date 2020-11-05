@@ -1,18 +1,22 @@
 .about {
-    background-color: $light_blue;
-    height: 700px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: $light_blue;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    
-    &__container {
-        padding: 94px;
-    }
-     &__title, &__subtitle {
-        color: $white;
-        width: 499px;
-        margin-top: 10px;
-    }
-    
+  &__images {
+    width: 566px;
+    height: 559px;
+  }
+
+  &__container {
+    padding: 94px;
+  }
+  &__title,
+  &__subtitle {
+    color: $white;
+    width: 499px;
+    margin-top: 10px;
+  }
 }

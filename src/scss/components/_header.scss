@@ -1,15 +1,14 @@
 .header {
-  ///background-image: url(/src/assets/images/header.png);
-    background: url("https://i.ibb.co/1bxz1Pq/img.jpg");
-    padding: 30px 165px 0px 165px;
-    min-height: 970px;
+  background-image: url(/assets/images/header-img.png);
+  padding: 30px 165px 0px 165px;
+  min-height: 970px;
 
-    &__container {
-     display: flex;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     height: 70px;
-     margin-bottom: 258px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 70px;
+    margin-bottom: 258px;
   }
   &__caption {
     width: 127px;
@@ -34,14 +33,13 @@
       margin-right: 25px;
       border-top: 3px solid transparent;
       transition: 0.5s;
-    
+
       &:hover {
         border-top: 3px solid $orang;
       }
       &:last-child {
         margin-right: 0px;
       }
-
     }
   }
   &__headline {
@@ -59,4 +57,4 @@
     color: $black;
     margin-bottom: 31px;
   }
-  }
+}

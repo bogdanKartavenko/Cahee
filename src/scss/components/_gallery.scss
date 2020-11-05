@@ -25,6 +25,7 @@
   &__image,
   &__img,
   &__logo {
+    height: auto;
     margin: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
@@ -35,7 +36,7 @@
 }
 
 .email {
-  background: url("https://i.ibb.co/Nxm51hJ/bg.png");
+  background: url("/assets/images/subscribe-img.png");
   height: 500px;
   display: block;
   align-items: center;
