@@ -47,25 +47,25 @@
     font-weight: 700;
     line-height: 27px;
     margin-top: 145px;
-  margin-bottom: 34px;
+    margin-bottom: 34px;
   }
   &__subtitle {
     width: 550px;
-  height: 43px;
+    height: 43px;
     margin-bottom: 31px;
   }
   &__container {
     display: flex;
   }
   &__imput {
-  width: 570px;
-  height: 55px;
-  border: 1px solid $black;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 27px;
-  opacity: 0.5;
-  margin-right: 30px;
+    width: 570px;
+    height: 55px;
+    border: 1px solid $black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    opacity: 0.5;
+    margin-right: 30px;
   }
   &__button {
     background-color: $green;

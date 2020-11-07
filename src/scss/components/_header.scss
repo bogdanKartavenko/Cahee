@@ -2,11 +2,10 @@
   background-image: url(/assets/images/header-img.png);
   padding: 30px 165px 0px 165px;
   min-height: 970px;
+  flex-wrap: wrap;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    @include flex(space-between);
     height: 70px;
     margin-bottom: 258px;
   }
