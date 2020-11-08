@@ -1,8 +1,7 @@
 .contact {
   background: url("/assets/images/contact-img.png") no-repeat;
   background-size: cover;
-  height: 866px;
-  display: block;
+  display: block; 
   &__title {
     margin: 0 auto 0 auto;
     padding-top: 101px;
@@ -89,11 +88,15 @@
 }
 
 .contact__container {
-  margin: 0 auto 0 auto;
-  width: 990x;
-  height: 450px;
-  display: flex;
-  justify-content: space-around;
+  @include media ($screen-tablet) {
+    margin: 0 auto 0 auto;
+    width: 990x;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+  }
+  display: block;
+ text-align: center;
 }
 
 ::-webkit-input-placeholder {

@@ -1,26 +1,43 @@
 .gallery {
-  background: $yellow;
+  @include media ($screen-tablet) {
+    background: $yellow;
   padding-top: 120px;
-  height: 1536px;
+  }
+  background: $yellow;
+  padding: 15px;
+
 
   &__container {
-    width: 577px;
+    @include media ($screen-tablet) {
+      width: 577px;
     margin-left: auto;
     margin-right: auto;
+    }
+    width: 280px;
+    
   }
   &__list {
     margin-top: 55px;
-  }
+  } 
   &__block-image,
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
+  &__title {
+    @include media ($screen-tablet) {
 
+    }
+  }
   &__title,
   &__subtitle {
-    text-align: center;
+    @include media ($screen-tablet){
+      text-align: center;
+      width: 577px;
+      height: 50px;
+    }
+    width: 250px;
   }
   &__image,
   &__img,
@@ -36,29 +53,51 @@
 }
 
 .email {
+  @include media ($screen-tablet) {
+    background: url("/assets/images/subscribe-img.png");
+  height: 500px;
+  display: block;
+  align-items: center;
+  justify-content: center;
+    padding-left: 164px;
+  }
   background: url("/assets/images/subscribe-img.png");
   height: 500px;
   display: block;
   align-items: center;
   justify-content: center;
-  padding-left: 164px;
+  text-align: center;
+  padding: 15px;
+  
   &__caption {
+    @include media ($screen-tablet) {
     font-size: 40px;
     font-weight: 700;
     line-height: 27px;
     margin-top: 145px;
     margin-bottom: 34px;
   }
+  min-width: 280px ;
+  margin-bottom: 30px;
+  }
   &__subtitle {
+    @include media ($screen-tablet) {
     width: 550px;
     height: 43px;
     margin-bottom: 31px;
+    }
+    max-width: 550px;
+    margin-bottom: 30px;
   }
   &__container {
-    display: flex;
+    @include media ($screen-tablet) {
+      display: flex;
+    }
+    display: block;
   }
   &__imput {
-    width: 570px;
+    @include media ($screen-tablet) {
+      width: 570px;
     height: 55px;
     border: 1px solid $black;
     font-size: 15px;
@@ -66,6 +105,16 @@
     line-height: 27px;
     opacity: 0.5;
     margin-right: 30px;
+    }
+    min-width: 250px;
+    height: 55px;
+    border: 1px solid $black;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 27px;
+    opacity: 0.5;
+    margin-bottom: 30px;
+
   }
   &__button {
     background-color: $green;

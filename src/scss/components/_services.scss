@@ -1,17 +1,36 @@
 .services {
+  @include media($screen-tablet) {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: $blue;
-  height: 100vh;
+  padding: 15px;
+}
+display: block;
+align-items: center;
+padding: 15px;
+background: $blue;
 
   &__items {
-    width: 410px;
+    @include media($screen-tablet) {
+      width: 410px;
+    height: 460px;
+    }
+    width: 220px;
     height: 460px;
   }
 
   &__button {
-    width: 400px;
+    @include media($screen-tablet) {
+      width: 400px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: $white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    }
+    width: 250px;
     height: 100px;
     margin-bottom: 20px;
     background-color: $white;
@@ -21,15 +40,23 @@
 
     &-text {
       width: 300px;
-      height: 30px;
+      height: 50px;
       font-size: 20px;
       font-weight: 700;
+      display: block;
+      align-items: center;
       text-align: center;
     }
+  
     &-icon {
-      width: 50px;
+      @include media ($screen-tablet) {
+        width: 50px;
       height: 50px;
       margin: 25px;
+      }
+      width: 80px;
+      height: 80px;
+      margin: 10px;
     }
     &-line {
       background-color: $black;
@@ -38,11 +65,14 @@
     }
   }
   &__aside {
-    width: 550px;
-    height: 550px;
+    @include media ($screen-tablet) {
+      width: 550px;
+    height: 700px;
     justify-content: center;
     align-items: center;
     display: flex;
+    }
+    display: none;
   }
   &__images {
     padding: 0 0 90px 90px;

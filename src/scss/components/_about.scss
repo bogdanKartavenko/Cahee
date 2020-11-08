@@ -1,22 +1,45 @@
 .about {
-  background-color: $light_blue;
+  @include media ($screen-tablet) {
+    background-color: $light_blue;
   height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
+  }
+  background-color: $light_blue;
+  display: block;
+  padding: 15px;
 
   &__images {
+    @include media ($screen-tablet) {
+      display: block;
+      
+    }
+    display: none;
     width: 566px;
     height: 559px;
   }
 
   &__container {
-    padding: 94px;
+    @include media ($screen-tablet) {
+      width: 600px;
+      padding: 94px;
+    }
+    width: 220px;
+  }
+  &__title {
+    line-height: 70px;
+    font-size: 70px;
   }
   &__title,
   &__subtitle {
-    color: $white;
+    @include media ($screen-tablet) {
+      color: $white;
     width: 499px;
+    margin-top: 10px;
+    }
+    color: $white;
+    width: 220px;
     margin-top: 10px;
   }
 }
