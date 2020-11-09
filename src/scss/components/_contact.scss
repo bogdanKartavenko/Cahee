@@ -1,23 +1,43 @@
 .contact {
-  background: url("/assets/images/contact-img.png") no-repeat;
+  @include media ($screen-tablet) {
+    background: url("/assets/images/contact-img.png") no-repeat;
   background-size: cover;
   display: block; 
+  }
+  background: url("/assets/images/contact-img.png") no-repeat;
+  background-size: cover;
+  display: block;
+  padding: 15px; 
   &__title {
-    margin: 0 auto 0 auto;
+    @include media ($screen-tablet) {
+      margin: 0 auto 0 auto;
     padding-top: 101px;
     width: 337px;
     height: 65px;
+    }
+    margin: 50px auto 0 auto;
+    padding-top: 20px;
+    min-width: 220px;
+    height: 100px;
+    text-align: center;
   }
 
   &__subtitle {
-    margin: 68px auto 66px auto;
+    @include media ($screen-tablet) {
+      margin: 68px auto 66px auto;
     width: 350px;
     height: 41px;
+    text-align: center;
+    }
+    margin: 68px auto 66px auto;
+    min-width: 220px;
+    height: 110px;
     text-align: center;
   }
 
   &__aside {
-    width: 500px;
+    @include media ($screen-tablet) {
+      width: 500px;
     height: 445px;
     &--small {
       display: block;
@@ -49,14 +69,64 @@
         border-left: 5px solid $darken_blue;
       }
     }
+    }
+    min-width: 300px;
+    height: 445px;
+    &--small {
+      display: block;
+      min-width: 290px;
+      height: 50px;
+      border: 0;
+      background-color: $light_blue;
+      opacity: 0.5;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      margin: 10px auto;
+
+      &:focus {
+        background: $light_blue;
+        opacity: 1;
+        border-left: 5px solid $darken_blue;
+      }
+    }
+    &--big {
+      display: block;
+      min-width: 290px;
+      height: 250px;
+      border: 0;
+      background-color: $light_blue;
+      opacity: 0.5;
+      padding: 10px 0 205px 20px;
+      margin: 0 auto;
+      &:focus {
+        background: $light_blue;
+        opacity: 1;
+        border-left: 5px solid $darken_blue;
+      }
+    }
   }
 
   &__data {
-    width: 317px;
+    @include media ($screen-tablet) {
+      width: 317px;
     height: 160px;
     font-size: 20px;
     line-height: 25px;
     text-align: start;
+    color: $black;
+    &--big {
+      font-weight: 600;
+    }
+    &--small {
+      font-weight: 300;
+    }
+    }
+    min-width: 260px;
+    height: 160px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    color: $white;
     &--big {
       font-weight: 600;
     }
@@ -90,7 +160,7 @@
 .contact__container {
   @include media ($screen-tablet) {
     margin: 0 auto 0 auto;
-    width: 990x;
+    width: 990px;
     height: 450px;
     display: flex;
     justify-content: space-around;

@@ -25,7 +25,8 @@
       width: 600px;
       padding: 94px;
     }
-    width: 220px;
+    margin: 0 auto;
+    max-width: 600px;
   }
   &__title {
     line-height: 70px;
@@ -38,8 +39,10 @@
     width: 499px;
     margin-top: 10px;
     }
+    
     color: $white;
-    width: 220px;
-    margin-top: 10px;
+    max-width: 499px;
+    margin: 10px auto;
+    text-align: center;
   }
 }

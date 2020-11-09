@@ -4,17 +4,20 @@
   @include media($screen-tablet) {
     display: block;
     padding: 30px 165px 50px 165px;
+    text-align: start;
   }
- 
-  flex-wrap: wrap;
+  display: block;
+  text-align: center;
 
   &__container {
     @include media($screen-tablet) {
       @include flex(space-between);
     height: 70px;
     margin-bottom: 258px;
+    width: auto;
     }
-   margin-bottom: 60px;
+   margin: 0 auto 60px auto;
+   width: 127px;
   }
   &__caption {
     width: 127px;
@@ -158,27 +161,34 @@
     font-size: 62px;
     font-weight: 900;
     line-height: 25px;
-    margin-bottom: 34px;
+    margin: 34px 0;
     }
-    width: 220px;
+    max-width: 350px;
     height: 110px;
     color: $black;
     font-size: 62px;
     font-weight: 900;
     line-height: 60px;
-    margin-bottom: 34px;
+    margin: 0 auto 34px auto;
   }
   &__subtitle {
     @include media ($screen-tablet) {
       width: 380px;
     height: 70px;
     color: $black;
-    margin-bottom: 31px;
+    margin: 31px 0;
     }
-    width: 220px;
+    max-width: 380px;
     height: 100px;
     color: $black;
-    margin-bottom: 31px;
+    margin: 0 auto 31px auto;
+  }
+  &__button {
+    @include media($screen-tablet) {
+      margin: 0;
+    }
+
+    margin: 0 auto;
   }
   &__scroll {
     @include media($screen-tablet) {

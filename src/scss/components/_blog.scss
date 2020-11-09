@@ -7,8 +7,13 @@
     padding-top: 120px;
   }
   &__subtitle {
-    width: 600px;
+    @include media ($screen-tablet) {
+      width: 600px;
     height: 66px;
+    margin: 0 auto 0 auto;
+    }
+    min-width: 220px;
+    height: 215px;
     margin: 0 auto 0 auto;
   }
   &__pic {
