@@ -18,7 +18,22 @@
   }
   &__list {
     margin-top: 55px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
   } 
+  &__block-logo {
+    width: 770px;
+height: 550px;
+  }
+  &__block-img {
+    width: 370px;
+    height: 550px;
+  }
+  &__block-image {
+    width: 1170px;
+    height: 400px;
+  }
   &__block-image,
   &__list {
     display: flex;
@@ -47,8 +62,20 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
   }
   &__logo {
-    width: 66%;
-    @include padding-hack (66%)
+    width: 95%;
+    @include padding-hack (68%)
+  }
+  &__img {
+    width: 370px;
+height: 260px;
+width: 95%;
+    @include padding-hack (69%)
+  }
+  &__image {
+    width: 570px;
+height: 400px;
+width: 46%;
+    @include padding-hack (32%)
   }
   &__button {
     background: $blue;
@@ -80,14 +107,12 @@
     line-height: 27px;
     margin-top: 145px;
     margin-bottom: 34px;
-    width: 305px ;
   }
   min-width: 280px ;
   margin-bottom: 30px;
   }
   &__subtitle {
     @include media ($screen-tablet) {
-      text-align: start;
     width: 550px;
     height: 43px;
     margin-bottom: 31px;
@@ -97,7 +122,6 @@
   }
   &__container {
     @include media ($screen-tablet) {
-      width: 670px;
       display: flex;
     }
     display: block;
@@ -125,9 +149,6 @@
   }
   &__button {
     background-color: $green;
-    @include media ($screen-tablet) {
-  
-    }
     margin: 0 auto;
   }
 }
