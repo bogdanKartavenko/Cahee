@@ -115,6 +115,7 @@
     line-height: 25px;
     text-align: start;
     color: $black;
+    margin-left: 150px;
     &--big {
       font-weight: 600;
     }
@@ -133,6 +134,7 @@
     }
     &--small {
       font-weight: 300;
+      margin-bottom: 10px;
     }
   }
 
@@ -169,7 +171,9 @@
   display: block;
  text-align: center;
 }
-
+.contact__aside--small {
+  color: $white;
+}
 ::-webkit-input-placeholder {
   color: $white;
 }

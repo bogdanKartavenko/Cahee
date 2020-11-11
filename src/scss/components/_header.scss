@@ -6,6 +6,7 @@
     padding: 30px 165px 50px 165px;
     text-align: start;
   }
+  min-height: 100vh;
   display: block;
   text-align: center;
 
@@ -176,6 +177,9 @@
       width: 380px;
     height: 70px;
     color: $black;
+    font-size: 17px;
+font-weight: 300;
+line-height: 27px;
     margin: 31px 0;
     }
     max-width: 380px;
