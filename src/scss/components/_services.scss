@@ -92,19 +92,18 @@ background: $blue;
   &__images {
     @include media ($screen-tablet) {
     padding: 0 0 90px 90px;
+    width: 462px;
+height: 527px;
   }
   margin: 20px auto 0 auto;
   width: 300px;
 }
   &__title {
-    @include media ($screen-tablet) {
-      width: 570;
+    width: 550px;
     height: 67px;
+    padding-top: 19px;
     color: $white;
     position: absolute;
-    }
-    width: 290px;
-    color: $white;
-    position: absolute;
+    
   }
 }
